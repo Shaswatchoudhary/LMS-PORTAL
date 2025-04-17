@@ -1,5 +1,6 @@
 import axiosInstance from "@/api/axiosInstance";
 
+// Authentication services
 export async function registerService(formData) {
   const { data } = await axiosInstance.post("/auth/register", {
     ...formData,
@@ -18,7 +19,7 @@ export async function checkAuthService() {
   return data;
 }
 
-export const mediaUploadService = async (file) => {
+export async function mediaUploadService(file) {
   try {
     console.log("Uploading file:", {
       name: file.name,
