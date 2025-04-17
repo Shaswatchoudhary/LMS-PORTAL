@@ -76,14 +76,14 @@ The project has the following directory structure:
 bash
 lms-portal/
 │
-├── backend/                # Backend code (Node.js, Express)
+├── server/                # Backend code (Node.js, Express)
 │   ├── models/             # Mongoose models (Schema definitions)
 │   ├── routes/             # API routes (Course, Auth, etc.)
 │   ├── controllers/        # Controller functions for routes
 │   ├── server.js           # Server setup and middleware
 │   ├── .env                # Backend environment variables
 │
-├── frontend/               # Frontend code (React)
+├── client/               # Frontend code (React)
 │   ├── src/                # React components and pages
 │   ├── public/             # Static files (index.html, images, etc.)
 │   └── .env                # Frontend environment variables
